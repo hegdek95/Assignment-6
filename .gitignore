@@ -33,3 +33,72 @@ elif side1 == side2 or side1 == side3 or side2 == side3:
     print("The triangle is an isosceles triangle.")
 else:
     print("The triangle is a scalene triangle.")
+
+# 5 . Write a Python program to calculate the sum and average of n integer numbers (input from the user). Input 0 to finish
+
+sum = 0
+count = 0
+
+while True:
+    num = int(input("Enter an integer number (enter 0 to finish): "))
+    if num == 0:
+        break
+    sum += num
+    count += 1
+
+if count > 0:
+    average = sum / count
+else:
+    average = 0
+
+print("The sum of the numbers is:", sum)
+print("The average of the numbers is:", average)
+
+# 6 Write a Python program to construct the following pattern, using a nested loop number.
+ for i in range(1, 10):
+    for j in range(i):
+        print(i, end="")
+    print()
+    
+# 7 Write a Python program that counts the number of elements within a list that are greater than 30.
+numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+count = 0
+for num in numbers:
+    if num > 30:
+        count += 1
+print("The number of elements greater than 30 is:", count)
+
+# 8 Take values of length and breadth of a rectangle from user and check if it is square or not.
+length = float(input("Enter the length of the rectangle: "))
+breadth = float(input("Enter the breadth of the rectangle: "))
+
+# Check if it is a square or not
+if length == breadth:
+    print("It is a square.")
+else:
+    print("It is not a square.")
+    
+# 9 A shop will give discount of 10% if the cost of purchased quantity is more than 1000.Ask user for quantitySuppose, one unit will cost 100.Judge and print total cost for user.
+quantity = int(input("Enter the quantity of units: "))
+cost_per_unit = 100
+total_cost = quantity * cost_per_unit
+
+if total_cost > 1000:
+    discount = 0.1 * total_cost
+    total_cost -= discount
+print("Total cost: ₹", total_cost)
+ 
+# 10  A company decided to give bonus of 5% to employee if his/her year of service is more than 5 years. Ask user for their salary and year of service and print the net bonus amount.
+salary = float(input("Enter your salary: "))
+years_of_service = int(input("Enter your years of service: "))
+
+if years_of_service > 5:
+    bonus = 0.05 * salary
+else:
+    bonus = 0
+
+# print result
+print("Your net bonus amount is: ₹", bonus) 
+ 
+
+
